@@ -1,25 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-/*
+﻿/*
  Note :
  We always used sealed-Modifier for (Derived-Class / Derived-Porperty / Derived-Method) :
 
-    1.Derived-Class : to prevent any other class inherit from that base class
+    1.Derived-Class    : To prevent any other class inherit from that base class
     2.Derived-Porperty : To prevent any other property override that virtual property in base class
-    3.Derived-Method :  To prevent any other method override that virtual method in base class
+    3.Derived-Method   : To prevent any other method override that virtual method in base class
  */
-
 
 namespace Console_Sealed_Modifier
 {
     // sealed-Modifier for Class
     class BaseClass { }
     sealed class DerivedClass : BaseClass { }
-    // class NewClass : DerivedClass { }  -- Error : sealed-Keyword prevent any other class inherit from class B
+    // class NewClass : DerivedClass { }  -- Error : sealed-Keyword prevent any other class inherit from class DerivedClass
 
     //-----------------------------------------------
 
